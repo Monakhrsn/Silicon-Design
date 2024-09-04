@@ -1,0 +1,84 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+//sm ≥576px, md ≥768px,	lg ≥992px
+body {
+  font-family: "manrope", sans-serif;
+  $color-primary: #6366F1;
+  $color-secondry: #585C7B;
+
+.btn-primary {
+  background-color: $color-primary;
+}
+
+  .main-header {
+    background-image: linear-gradient(#fff, #fbf4fe);
+    nav {
+      min-height: 60px;
+
+      .logo-text {
+        font-weight: bolder;
+        font-size: 1.25rem;
+        padding-left: 0.25rem;
+      }
+
+      .form-switch {
+        .form-check-input {
+          --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+          --bs-form-check-bg: gray;
+
+          width: 2.9rem;
+          height: 1.5rem;
+          border: none;
+          box-shadow: 0 8px 16px 0 rgba(99, 102, 241,0.19), 0 6px 20px 0 rgb(99, 102, 241, 0.19);
+          cursor: pointer;
+
+          &:checked {
+            background-color: $color-primary;
+          }
+        }
+      }
+
+      .navbar-toggle {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(62, 66, 101, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        background-position: center;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    section {
+      text-align: center;
+
+      h1{
+        font-weight: bolder;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      p {
+        color: $color-secondry;
+      }
+
+      .accardion-btn {
+        width: 2.75rem;
+        height: 2.75rem;
+        border: none;
+        outline: none;
+      }
+      
+      .discover-more {
+        color: $color-secondry;
+        font-size: 14px;
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  .how-work-section {
+    background-color: orange;
+  }
+  
+}
