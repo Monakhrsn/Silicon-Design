@@ -1,11 +1,18 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+
+$color-dark: #0B0F19;
+$color-primary: #6366F1;
+$color-gray: #9397AD;
+$color-darker-gray: #585C7B;
+
+$tablet-size: 768px;
+$tablet-landscape-size: 992px;
+$desktop-size: 1200px;
 //sm ≥576px, md ≥768px,	lg ≥992px
-body {
-  font-family: "manrope", sans-serif;
-  $color-primary: #6366F1;
-  $color-secondry: #585C7B;
 
+body {
   .btn-primary {
     background-color: $color-primary;
   }
@@ -68,7 +75,7 @@ body {
       }
 
       p {
-        color: $color-secondry;
+        color: $color-darker-gray;
       }
 
       .discover-btn-wrapper { 
@@ -81,12 +88,12 @@ body {
         }
         
         .discover-more {
-          color: $color-secondry;
+          color: $color-darker-gray;
           font-size: 14px;
         }
       }
 
-      @media (min-width: 576px) {     
+      @media (min-width: $tablet-size) {     
         & {
           background-image: url('/images/Group.svg');
           background-repeat: no-repeat;
@@ -102,8 +109,14 @@ body {
           width: 104px;
         }
       }
+
+      @media (min-width: $tablet-landscape-size) {     
+        & {
+          background-size:contain;  
+        }
+      }
       
-      @media (min-width: 992px) {
+      @media (min-width: $desktop-size) {
         & {
           background-size: contain;
         }
