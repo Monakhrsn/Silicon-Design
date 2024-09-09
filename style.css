@@ -11975,9 +11975,21 @@ body .main-header {
 body .main-header nav {
   min-height: 60px;
 }
-body .main-header nav .logo-text {
+body .main-header nav a {
+  text-decoration: none;
+  cursor: pointer;
+}
+body .main-header nav a .logo-text {
   font-weight: bolder;
   font-size: 1.25rem;
+  color: #0B0F19;
+}
+body .main-header nav .featurs-link a {
+  text-decoration: none;
+  color: #33354D;
+}
+body .main-header nav .featurs-link a:hover {
+  color: #6366F1;
 }
 body .main-header nav .form-switch {
   padding: 0;

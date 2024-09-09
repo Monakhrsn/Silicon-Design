@@ -6,6 +6,7 @@ $color-dark: #0B0F19;
 $color-primary: #6366F1;
 $color-gray: #9397AD;
 $color-darker-gray: #585C7B;
+$color-gray-800: #33354D;
 
 $tablet-size: 768px;
 $tablet-landscape-size: 992px;
@@ -23,9 +24,29 @@ body {
     nav {
       min-height: 60px;
 
+     a {
+      text-decoration: none;
+      cursor: pointer;
+
       .logo-text {
         font-weight: bolder;
         font-size: 1.25rem;
+        color: $color-dark;
+      }
+     
+     }
+
+      
+
+      .featurs-link {
+        a {
+          text-decoration: none;
+          color: $color-gray-800;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
       }
 
       .form-switch {
