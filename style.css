@@ -12057,7 +12057,7 @@ body .main-header .header-details .discover-btn-wrapper .discover-more {
 }
 @media (min-width: 992px) {
   body .main-header .header-details {
-    background-size: contain;
+    background-size: auto;
   }
 }
 @media (min-width: 1200px) {

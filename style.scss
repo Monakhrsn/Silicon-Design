@@ -122,18 +122,22 @@ body {
           background-size: 55%;  
         }
 
-        .app-img {
-          width: 94px;
-        }
+      .app-img {
+        width: 94px;
+      }
 
-        .google-img {
-          width: 104px;
-        }
+      .google-img {
+        width: 104px;
+      }
+      
+        
+
+        
       }
 
       @media (min-width: $tablet-landscape-size) {     
         & {
-          background-size:contain;  
+          background-size:auto;  
         }
       }
       
