@@ -12066,17 +12066,21 @@ body .main-header .header-details .discover-btn-wrapper .discover-more {
   }
 }
 @media (min-width: 768px) {
-  body #brands-section #brands-wrapper {
-    gap: 1rem;
-  }
-  body #brands-section #brands-wrapper .img-box {
+  body #brands-section .img-box {
     border: 1px solid #E2E5F1;
     border-radius: 8px;
-    height: 100%;
+    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+  }
+  body #brands-section .img-box img {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  body #brands-section .img-box img {
+    width: 80%;
   }
 }
 body .how-work-section {
