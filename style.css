@@ -11966,6 +11966,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "manrope";
+}
 body .btn-primary {
   background-color: #6366F1;
 }
@@ -12082,6 +12085,30 @@ body .main-header .header-details .discover-btn-wrapper .discover-more {
   body #brands-section .img-box img {
     width: 80%;
   }
+}
+body #app-features-section #features-intro h2, body #app-features-section #features-intro .h2 {
+  color: #0B0F19;
+  font-weight: bolder;
+}
+body #app-features-section #features-intro p {
+  color: #585C7B;
+  font-size: 18px;
+}
+body #app-features-section .card-wrapper {
+  margin-top: 1rem;
+}
+body #app-features-section .card-wrapper img {
+  border: solid 1px #F3F6FF;
+  background-color: #F3F6FF;
+  padding: 1rem;
+  border-radius: 8px;
+}
+body #app-features-section .card-wrapper h4, body #app-features-section .card-wrapper .h4 {
+  font-weight: bolder;
+}
+body #app-features-section .card-wrapper p {
+  color: #585C7B;
+  font-size: 16px;
 }
 body .how-work-section {
   background-color: orange;
