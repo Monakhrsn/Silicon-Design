@@ -7,11 +7,11 @@ $color-primary: #6366F1;
 $color-gray: #9397AD;
 $color-darker-gray: #585C7B;
 $color-gray-800: #33354D;
+$colo-border-gray: #E2E5F1;
 
 $tablet-size: 768px;
 $tablet-landscape-size: 992px;
 $desktop-size: 1200px;
-//sm ≥576px, md ≥768px,	lg ≥992px
 
 body {
   .btn-primary {
@@ -24,19 +24,16 @@ body {
     nav {
       min-height: 60px;
 
-     a {
-      text-decoration: none;
-      cursor: pointer;
+      a {
+        text-decoration: none;
+        cursor: pointer;
 
-      .logo-text {
-        font-weight: bolder;
-        font-size: 1.25rem;
-        color: $color-dark;
+        .logo-text {
+          font-weight: bolder;
+          font-size: 1.25rem;
+          color: $color-dark;
+        } 
       }
-     
-     }
-
-      
 
       .featurs-link {
         a {
@@ -122,17 +119,13 @@ body {
           background-size: 55%;  
         }
 
-      .app-img {
-        width: 94px;
-      }
+        .app-img {
+          width: 94px;
+        }
 
-      .google-img {
-        width: 104px;
-      }
-      
-        
-
-        
+        .google-img {
+          width: 104px;
+        }   
       }
 
       @media (min-width: $tablet-landscape-size) {     
@@ -149,8 +142,29 @@ body {
     }
   }
 
+
+  #brands-section {
+
+    @media (min-width: $tablet-size) {   
+      #brands-wrapper {
+        
+        gap: 1rem;
+       
+        .img-box {
+          border: 1px solid $colo-border-gray;
+          border-radius: 8px;
+          height: 100%;
+          // width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 2rem;
+        }  
+      }    
+    }
+  }
+   
   .how-work-section {
     background-color: orange;
-  }
-  
+  }  
 }

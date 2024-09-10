@@ -12065,6 +12065,20 @@ body .main-header .header-details .discover-btn-wrapper .discover-more {
     background-size: contain;
   }
 }
+@media (min-width: 768px) {
+  body #brands-section #brands-wrapper {
+    gap: 1rem;
+  }
+  body #brands-section #brands-wrapper .img-box {
+    border: 1px solid #E2E5F1;
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+}
 body .how-work-section {
   background-color: orange;
 }/*# sourceMappingURL=style.css.map */
