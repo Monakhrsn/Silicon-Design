@@ -16,12 +16,12 @@ $desktop-size: 1200px;
 
 body {
   font-family: 'manrope';
-  h4, h2, h1 {
+  h4, h2, h3, h1 {
     font-weight: bolder;
     color: $color-dark;
   }
 
-  p {
+  p ,li {
     color: $color-darker-gray;
     font-size: 16px;
   }

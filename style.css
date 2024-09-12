@@ -11969,11 +11969,11 @@ textarea.form-control-lg {
 body {
   font-family: "manrope";
 }
-body h4, body .h4, body h2, body .h2, body h1, body .h1 {
+body h4, body .h4, body h2, body .h2, body h3, body .h3, body h1, body .h1 {
   font-weight: bolder;
   color: #0B0F19;
 }
-body p {
+body p, body li {
   color: #585C7B;
   font-size: 16px;
 }
