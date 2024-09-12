@@ -11969,6 +11969,14 @@ textarea.form-control-lg {
 body {
   font-family: "manrope";
 }
+body h4, body .h4, body h2, body .h2, body h1, body .h1 {
+  font-weight: bolder;
+  color: #0B0F19;
+}
+body p {
+  color: #585C7B;
+  font-size: 16px;
+}
 body .btn-primary {
   background-color: #6366F1;
 }
@@ -12028,12 +12036,6 @@ body .main-header nav .sign-btn {
   border-radius: 5px;
   font-size: 14px;
 }
-body .main-header .header-details h1, body .main-header .header-details .h1 {
-  font-weight: bolder;
-}
-body .main-header .header-details p {
-  color: #585C7B;
-}
 body .main-header .header-details .discover-btn-wrapper .accardion-btn {
   width: 2.75rem;
   height: 2.75rem;
@@ -12086,14 +12088,6 @@ body .main-header .header-details .discover-btn-wrapper .discover-more {
     width: 80%;
   }
 }
-body #app-features-section #features-intro h2, body #app-features-section #features-intro .h2 {
-  color: #0B0F19;
-  font-weight: bolder;
-}
-body #app-features-section #features-intro p {
-  color: #585C7B;
-  font-size: 18px;
-}
 body #app-features-section .card-wrapper {
   margin-top: 1rem;
 }
@@ -12103,13 +12097,21 @@ body #app-features-section .card-wrapper img {
   padding: 1rem;
   border-radius: 8px;
 }
-body #app-features-section .card-wrapper h4, body #app-features-section .card-wrapper .h4 {
-  font-weight: bolder;
+body #how-work-section {
+  background-color: #F3F6FF;
 }
-body #app-features-section .card-wrapper p {
-  color: #585C7B;
-  font-size: 16px;
+@media (min-width: 768px) {
+  body #how-work-section img {
+    width: 100%;
+  }
 }
-body .how-work-section {
-  background-color: orange;
+@media (min-width: 768px) {
+  body #how-work-section p {
+    margin: auto 10rem;
+  }
+}
+@media (min-width: 1200px) {
+  body #how-work-section p {
+    margin: auto 17rem;
+  }
 }/*# sourceMappingURL=style.css.map */
