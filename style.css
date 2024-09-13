@@ -12107,6 +12107,13 @@ body #how-work-section h2, body #how-work-section .h2 {
 @media (min-width: 768px) {
   body #how-work-section img {
     width: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  body #how-work-section img {
+    width: 80%;
   }
 }
 body #how-work-section #how-work-info {
@@ -12123,7 +12130,8 @@ body #how-work-section #how-work-info {
   }
 }
 body #transfer-simple-receive {
-  margin: 6rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 body #transfer-simple-receive button {
   background-color: #6366F1;
@@ -12137,7 +12145,6 @@ body #transfer-simple-receive button img {
   padding: 1rem;
 }
 body #transfer-simple-receive #simple-transfer-info {
-  margin-right: 8rem;
   margin-top: 5rem;
 }
 body #transfer-simple-receive #simple-transfer-info ul {
@@ -12150,7 +12157,6 @@ body #transfer-simple-receive #simple-transfer-info ul li img {
   margin-right: 0.5rem;
 }
 body #transfer-simple-receive #receive-payment-info {
-  margin-left: 10rem;
   margin-top: 5rem;
 }
 body #transfer-simple-receive #receive-payment-info #bank-details-wrapper img {
@@ -12161,4 +12167,7 @@ body #transfer-simple-receive #receive-payment-info #bank-details-wrapper img {
 }
 body #transfer-simple-receive #receive-payment-info #bank-details-wrapper p {
   padding-top: 1rem;
+}
+body #clients-testimonials {
+  background-color: #F3F6FF;
 }/*# sourceMappingURL=style.css.map */

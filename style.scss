@@ -193,7 +193,13 @@ body {
 
     img { 
       @media (min-width: $tablet-size) {   
-        width: 100%;    
+        width: 100%;
+        display: block;
+        margin: auto;
+      }
+
+      @media (min-width: $desktop-size) {   
+        width: 80%;  
       }
     }
 
@@ -211,7 +217,8 @@ body {
   }  
 
   #transfer-simple-receive {
-    margin: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 
     button {
       background-color: $color-primary;
@@ -227,7 +234,6 @@ body {
     }
 
     #simple-transfer-info {
-      margin-right: 8rem;
       margin-top: 5rem;
       
       ul {
@@ -245,7 +251,6 @@ body {
     }
 
    #receive-payment-info {
-    margin-left: 10rem;
     margin-top: 5rem;
 
     #bank-details-wrapper {  
@@ -261,5 +266,9 @@ body {
       }
     }
    }
+  }
+
+  #clients-testimonials {
+    background-color: $color-bg-light;
   }
 }
