@@ -12122,10 +12122,10 @@ body #how-work-section #how-work-info {
     margin: auto 18rem;
   }
 }
-body #make-transfer-simple {
+body #transfer-simple-receive {
   margin: 6rem;
 }
-body #make-transfer-simple button {
+body #transfer-simple-receive button {
   background-color: #6366F1;
   color: #fff;
   border: 1px solid #6366F1;
@@ -12133,6 +12133,32 @@ body #make-transfer-simple button {
   padding: 0 2rem;
   font-size: 14px;
 }
-body #make-transfer-simple button img {
+body #transfer-simple-receive button img {
   padding: 1rem;
+}
+body #transfer-simple-receive #simple-transfer-info {
+  margin-right: 8rem;
+  margin-top: 5rem;
+}
+body #transfer-simple-receive #simple-transfer-info ul {
+  line-height: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+body #transfer-simple-receive #simple-transfer-info ul li img {
+  margin-right: 0.5rem;
+}
+body #transfer-simple-receive #receive-payment-info {
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+body #transfer-simple-receive #receive-payment-info #bank-details-wrapper img {
+  border: solid 1px #F3F6FF;
+  background-color: #F3F6FF;
+  padding: 1rem;
+  border-radius: 8px;
+}
+body #transfer-simple-receive #receive-payment-info #bank-details-wrapper p {
+  padding-top: 1rem;
 }/*# sourceMappingURL=style.css.map */

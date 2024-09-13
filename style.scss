@@ -8,6 +8,7 @@ $color-darker-gray: #585C7B;
 $color-gray-800: #33354D;
 $color-border-gray: #E2E5F1;
 $color-bg-light: #F3F6FF;
+$color-white: #fff;
 
 $tablet-size: 768px;
 $tablet-landscape-size: 992px;
@@ -30,7 +31,7 @@ body {
   }
 
   .main-header {
-    background-image: linear-gradient(#fff, #f8f3fe);
+    background-image: linear-gradient($color-white, #f8f3fe);
 
     nav {
       min-height: 60px;
@@ -92,7 +93,7 @@ body {
       .sign-btn {
         background-color: $color-primary; 
         border-color: transparent;
-        color: #fff;
+        color: $color-white;
         border-radius: 5px;
         font-size: 14px;
       }
@@ -209,12 +210,12 @@ body {
     } 
   }  
 
-  #make-transfer-simple {
+  #transfer-simple-receive {
     margin: 6rem;
 
     button {
       background-color: $color-primary;
-      color: #fff;
+      color: $color-white;
       border: 1px solid $color-primary;
       border-radius: 8px;
       padding: 0 2rem;
@@ -224,5 +225,41 @@ body {
         padding: 1rem
       }
     }
+
+    #simple-transfer-info {
+      margin-right: 8rem;
+      margin-top: 5rem;
+      
+      ul {
+        line-height: 2rem;
+        list-style-type: none;
+        padding: 0;
+        margin: 2rem 0;
+        
+        li {
+          img {
+            margin-right: .5rem;
+          }
+        }
+      }    
+    }
+
+   #receive-payment-info {
+    margin-left: 10rem;
+    margin-top: 5rem;
+
+    #bank-details-wrapper {  
+      img {
+        border: solid 1px $color-bg-light;
+        background-color: $color-bg-light;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+
+      p {
+        padding-top: 1rem;
+      }
+    }
+   }
   }
 }
