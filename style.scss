@@ -1,7 +1,6 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-
 $color-dark: #0B0F19;
 $color-primary: #6366F1;
 $color-gray: #9397AD;
@@ -184,21 +183,46 @@ body {
    
   #how-work-section {
     background-color: $color-bg-light;
+    padding: 4rem 0;
+
+    h2 {
+      padding-bottom: 3rem;
       
+    }
+
     img { 
       @media (min-width: $tablet-size) {   
         width: 100%;    
       }
     }
 
-    p { 
+    #how-work-info {
+      padding-top: 3rem;
+
       @media (min-width: $tablet-size) {   
-        margin: auto 10rem;    
+        margin: auto 6rem;    
       }
 
       @media (min-width: $desktop-size) {   
-        margin: auto 17rem;    
+        margin: auto 18rem;    
+      }
+    } 
+  }  
+
+  #make-transfer-simple {
+    margin: 6rem;
+
+    button {
+      background-color: $color-primary;
+      color: #fff;
+      border: 1px solid $color-primary;
+      border-radius: 8px;
+      padding: 0 2rem;
+      font-size: 14px;
+
+      img {
+        padding: 1rem
       }
     }
-  }  
+  }
 }
