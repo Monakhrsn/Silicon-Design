@@ -11967,7 +11967,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  font-family: "manrope";
+  font-family: "manrope", sans-serif;
 }
 body h4, body .h4, body h2, body .h2, body h3, body .h3, body h1, body .h1 {
   font-weight: bolder;
@@ -12170,4 +12170,8 @@ body #transfer-simple-receive #receive-payment-info #bank-details-wrapper p {
 }
 body #clients-testimonials {
   background-color: #F3F6FF;
+}
+body #clients-testimonials h2, body #clients-testimonials .h2 {
+  margin-right: 3rem;
+  font-size: 40px;
 }/*# sourceMappingURL=style.css.map */

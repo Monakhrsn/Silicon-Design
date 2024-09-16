@@ -15,7 +15,8 @@ $tablet-landscape-size: 992px;
 $desktop-size: 1200px;
 
 body {
-  font-family: 'manrope';
+  font-family: 'manrope', sans-serif;
+
   h4, h2, h3, h1 {
     font-weight: bolder;
     color: $color-dark;
@@ -270,5 +271,10 @@ body {
 
   #clients-testimonials {
     background-color: $color-bg-light;
+
+    h2 {
+      margin-right: 3rem;
+      font-size: 40px;
+    }
   }
 }
