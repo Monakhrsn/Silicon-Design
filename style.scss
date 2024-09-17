@@ -9,6 +9,7 @@ $color-gray-800: #33354D;
 $color-border-gray: #E2E5F1;
 $color-bg-light: #F3F6FF;
 $color-white: #fff;
+$color-bg-btn: #3e4265;
 
 $tablet-size: 768px;
 $tablet-landscape-size: 992px;
@@ -277,4 +278,59 @@ body {
       font-size: 40px;
     }
   }
+
+  #FAQ-section {
+    margin: 4rem auto;
+     
+    .accordion-item {
+      button {
+        font-size: 16px;
+        font-weight:600;
+        color: $color-dark;
+      }
+  
+      .accordion-button {
+        &:not(.collapsed) {
+          background-color: $color-white;
+          
+          &:after {
+            box-shadow: 0 8px 16px 0 rgba(99, 102, 241, 0.19), 0 6px 20px 0 rgba(99, 102, 241, 0.19);
+            background-color: $color-primary;
+            background-image: url("/images/icons/chevron.svg");
+            transform: rotate(0deg);
+          }
+
+          @media (min-width: $tablet-size) {         
+              box-shadow: none;       
+          }
+        }
+      
+        &:after{
+          background-color: $color-bg-light;
+          padding: 1.25rem;
+          border-radius: 50%;
+          background-position: center;
+          background-image: url("/images/icons/chevron-dark.svg");
+          transform: rotate(180deg);    
+        }
+
+        @media (min-width: $tablet-size) {
+          border-radius: var(--bs-border-radius);
+        }
+      }
+  
+      .accordion-body {
+        color: $color-darker-gray;
+        font-size: 14px;
+      }
+
+      @media (min-width: $tablet-size) {     
+        border: none;
+        box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        border-radius: var(--bs-border-radius);
+      }
+    }
+  } 
 }
+

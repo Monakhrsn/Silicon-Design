@@ -12174,4 +12174,51 @@ body #clients-testimonials {
 body #clients-testimonials h2, body #clients-testimonials .h2 {
   margin-right: 3rem;
   font-size: 40px;
+}
+body #FAQ-section {
+  margin: 4rem auto;
+}
+body #FAQ-section .accordion-item button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0B0F19;
+}
+body #FAQ-section .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #fff;
+}
+body #FAQ-section .accordion-item .accordion-button:not(.collapsed):after {
+  box-shadow: 0 8px 16px 0 rgba(99, 102, 241, 0.19), 0 6px 20px 0 rgba(99, 102, 241, 0.19);
+  background-color: #6366F1;
+  background-image: url("/images/icons/chevron.svg");
+  transform: rotate(0deg);
+}
+@media (min-width: 768px) {
+  body #FAQ-section .accordion-item .accordion-button:not(.collapsed) {
+    box-shadow: none;
+  }
+}
+body #FAQ-section .accordion-item .accordion-button:after {
+  background-color: #F3F6FF;
+  padding: 1.25rem;
+  border-radius: 50%;
+  background-position: center;
+  background-image: url("/images/icons/chevron-dark.svg");
+  transform: rotate(180deg);
+}
+@media (min-width: 768px) {
+  body #FAQ-section .accordion-item .accordion-button {
+    border-radius: var(--bs-border-radius);
+  }
+}
+body #FAQ-section .accordion-item .accordion-body {
+  color: #585C7B;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  body #FAQ-section .accordion-item {
+    border: none;
+    box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: var(--bs-border-radius);
+  }
 }/*# sourceMappingURL=style.css.map */
