@@ -11980,6 +11980,10 @@ body p, body li {
 body .btn-primary {
   background-color: #6366F1;
 }
+body .btn-border-none {
+  border: none;
+  background-color: transparent;
+}
 body .main-header {
   background-image: linear-gradient(#fff, #f8f3fe);
 }
@@ -12175,9 +12179,6 @@ body #clients-testimonials h2, body #clients-testimonials .h2 {
   margin-right: 3rem;
   font-size: 40px;
 }
-body #FAQ-section {
-  margin: 4rem auto;
-}
 body #FAQ-section .accordion-item button {
   font-size: 16px;
   font-weight: 600;
@@ -12221,4 +12222,21 @@ body #FAQ-section .accordion-item .accordion-body {
     margin-bottom: 20px;
     border-radius: var(--bs-border-radius);
   }
+}
+body #FAQ-section .contact-us-wrapper {
+  border: 1px solid #E2E5F1;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+}
+body #FAQ-section .contact-us-wrapper img {
+  margin-bottom: 1rem;
+}
+body #FAQ-section .contact-us-wrapper .btn-border-none {
+  padding-left: 0;
+}
+body #FAQ-section .contact-us-wrapper .btn-border-none.right {
+  color: #22C55E;
+}
+body #FAQ-section .contact-us-wrapper .btn-border-none.left {
+  color: #6366F1;
 }/*# sourceMappingURL=style.css.map */
