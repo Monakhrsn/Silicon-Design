@@ -12239,4 +12239,12 @@ body #FAQ-section .contact-us-wrapper .btn-border-none.right {
 }
 body #FAQ-section .contact-us-wrapper .btn-border-none.left {
   color: #6366F1;
+}
+body .subscription {
+  background-color: #F3F6FF;
+  border: none;
+  border-radius: 8px;
+}
+body footer smaller {
+  color: #9397AD;
 }/*# sourceMappingURL=style.css.map */
