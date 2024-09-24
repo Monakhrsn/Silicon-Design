@@ -19,7 +19,7 @@
           </div>
           <div class="col-6 col-xl-8">
             <div class="row justify-content-end">
-              <label for="flexSwitchCheckDefault" class="dark-mode-text col-4 col-xl-2 d-none d-md-block">Dark Mode</label>
+              <label for="flexSwitchCheckDefault" class="dark-mode-text col-4 col-xl-2 d-none d-md-block" aria-label="darkmode switch">Dark Mode</label>
               <div class="col-3 col-xl-1 form-check form-switch">
                 <input
                   class="form-check-input"
@@ -52,19 +52,18 @@
                   We offer you a new generation of the mobile banking. Save, spend &
                   manage money in your pocket.
                 </p>
+               
                 <div class="links-wrapper mt-5 pb-xl-5 d-flex flex-column mb-md-5 flex-md-row gap-3 ">
-                  <button type="button" class="btn btn-dark col-12 col-md-6 col-md-4 ">
-                    <img src="/images/appstore-light.svg.svg" alt="App store link" class="app-img"/>
+                  <button type="button" class="btn btn-dark appstore col-12 col-md-4 col-xl-4">
                   </button>
-                  <button type="button" class="btn btn-dark col-12 col-md-6 col-md-4">
-                    <img src="/images/googleplay-light.svg.svg" alt="Google link" class="google-img "/>
+                  <button type="button" class="btn btn-dark googleplay col-12 col-md-4 col-xl-4">
                   </button>  
                 </div>
-                <div class="discover-btn-wrapper mt-4 mb-4 text-center text-sm-start mt-xl-5">
-                  <button class="accardion-btn bg-white rounded-circle" >
-                    <img src="/images/Icon.svg" alt="accardion icon" />
+               
+                <div class="discover-btn-wrapper mt-4 mb-4 mb-md-1 text-center  text-md-start">
+                  <button class="accardion-btn bg-white rounded-circle align-middle" >
                   </button>
-                  <span class="discover-more">Discover more</span> 
+                  <span class="discover-more ps-2 align-middle">Discover more</span> 
                 </div>
               </div>          
             </div>     
@@ -298,7 +297,7 @@
               <li><img src="/images/icons/bx-check-circle.svg" alt="Check icone">No monthly cash commission</li>
               <li><img src="/images/icons/bx-check-circle.svg" alt="Check icone">Manage payments and transactions online</li>
             </ul>
-            <button>Learn more <img src="/images/arrow.svg" alt="Arrow-right icon" /></button>
+            <button class="learn-more-btn">Learn more</button>
           </div>
           <div class="col-5">
             <img class="img-fluid" src="/images/make-transer-simple/send-money-to.svg" alt="transfer curve">
@@ -320,7 +319,7 @@
                 <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
               </div>
             </div>
-            <button>Learn more <img src="/images/arrow.svg" alt="Arrow-right icon" /></button>
+            <button class="learn-more-btn">Learn more </button>
           </div>
         </div>
       </section>
@@ -355,9 +354,8 @@
                 <div class="contact-us-wrapper">
                   <img class="img-fluid" src="/images/icons/phone.svg" alt="Phone ringing icon">
                   <p>Still have questions?</p>
-                  <button class="btn-border-none left">
-                    Contact us 
-                    <img class="img-fluid" src="/images/arrow.svg" alt="">
+                  <button class="btn-border-none left justify-content-md-between">
+                    <span class="pe-2">Contact us</span> 
                   </button>  
                 </div>
               </div> 
@@ -366,8 +364,8 @@
                   <img class="img-fluid" src="/images/icons/message.svg" alt="A pop up message"> 
                   <p>Don't like phone calls?</p>
                   <button class="btn-border-none right">
-                    Contact us 
-                    <img class="img-fluid" src="/images/arrow.svg" alt="">
+                    <span class="pe-2">Contact us</span> 
+                    <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
               </div>
@@ -484,8 +482,8 @@
                   <img class="img-fluid" src="/images/icons/phone.svg" alt="Phone ringing icon">
                   <p>Still have  questions?</p>
                   <button class="btn-border-none left">
-                    Contact us 
-                    <img class="img-fluid" src="/images/arrow.svg" alt="">
+                    <span class="pe-2">Contact us</span>
+                    <i class="fa-solid fa-arrow-right"></i>
                   </button>  
                 </div>
               </div> 
@@ -494,18 +492,15 @@
                   <img class="img-fluid" src="/images/icons/message.svg" alt="A pop up message"> 
                   <p>Don't like phone calls?</p>
                   <button class="btn-border-none right">
-                    Contact us 
-                    <img class="img-fluid" src="/images/arrow.svg" alt="">
+                    <span class="pe-2">Contact us </span>                  <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
               </div>
             </div>
             <div class="row d-md-none">
               <div class="col-12 my-5 text-center">
-                <button class="btn btn-primary py-3 px-4">
-                  <span>
-                    Contact us now
-                  </span>
+                <button class="btn btn-primary py-3 px-4">  
+                  <span class="pe-2">Contact us now</span>  
                 </button>
               </div>
             </div>
@@ -517,10 +512,10 @@
           <div class="col">
             <div class="subscription">
               <div class="row align-items-md-center">
-                <div class="col-md-6 col-xl-5">
+                <div class="col-md-6">
                   <div id="newsletter" class="row text-center py-5">
                     <div class="col d-flex justify-content-center align-items-center px-5">
-                      <div class="me-3 me-md-3">
+                      <div class="me-3 me-xl-4">
                         <img class="img-fluid" src="/images/icons/notification.svg" alt="Bell notification">
                       </div>
                       <h4 class="text-start d-xl-none">
@@ -533,13 +528,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-xl-5">
+                <div class="col-md-6">
                   <div class="row">
-                    <div class="col">
-                      <div class="input-group mb-4">
-                        <input type="email" class="form-control" placeholder=" <<<>>>Your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="col d-flex justify-content-start      align-items-center px-5">
+                      <div class="input-group input-wrapper mb-4">
+                        <input type="text" class="form-control email" type="email" placeholder="Your email" aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
-                      </div>  
+                      </div>
                     </div> 
                   </div>
                 </div>
@@ -555,5 +550,6 @@
         <smaller>Credit MadrasThemes</smaller>
       </div>   
     </footer>
+    <script src="darkmode.js"></script>
   </body>
 </html>

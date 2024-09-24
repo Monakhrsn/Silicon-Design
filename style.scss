@@ -1,5 +1,6 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "dark-mode.scss";
 
 $color-dark: #0B0F19;
 $color-primary: #6366F1;
@@ -18,6 +19,7 @@ $desktop-size: 1200px;
 
 body {
   font-family: 'manrope', sans-serif;
+  color-scheme: light;
 
   h4, h2, h3, h1 {
     font-weight: bolder;
@@ -108,19 +110,72 @@ body {
     }
 
     .header-details {
-      .discover-btn-wrapper { 
 
+      .appstore {
+        background-image: url('/images/appstore-light.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 33%;
+        min-height: 55px;
+
+        @media (min-width: $tablet-size) {
+          & {
+            min-height: 43px;
+            background-size: 70%;
+          }
+        }  
+        
+        @media (min-width: $desktop-size) {
+          & {
+            min-height: 52px;
+          }
+        }  
+      }
+
+      .googleplay {
+        background-image: url('/images/googleplay-light.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 33%;
+        min-height: 55px;
+        
+        @media (min-width: $tablet-size) {
+          & {
+            min-height: 43px;
+            background-size: 80%;
+          }
+        }
+        
+        @media (min-width: $desktop-size) {
+          & {
+            min-height: 52px;
+          }
+        }  
+      }
+      .discover-btn-wrapper { 
         .accardion-btn {
-          width: 2.75rem;
-          height: 2.75rem;
           border: none;
           outline: none;
+          padding: 1.25rem;
+          border-radius: 50%;
+          background-position: center;
+          background-image: url(/images/icons/chevron-dark.svg);
+          background-repeat: no-repeat;
+          transform: rotate(180deg);
+          box-shadow: 0 5px 16px 5px rgba(226, 224, 226, 0.2), 0 0 20px 1px rgba(120, 120, 120, 0.19);
+          background-color: $color-white;  
         }
         
         .discover-more {
           color: $color-darker-gray;
           font-size: 14px;
+          
         }
+
+        // @media (min-width: $desktop-size) {
+        // margin-top: 6rem;
+
+        // }
       }
 
       @media (min-width: $tablet-size) {     
@@ -157,21 +212,25 @@ body {
   #brands-section {
     .img-box {
       @media (min-width: $tablet-size) {   
-        border: 1px solid $color-border-gray;
-        border-radius: 8px;
-        min-height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        & {
+          border: 1px solid $color-border-gray;
+          border-radius: 8px;
+          min-height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-        img {
-          width: 90%;
+          img {
+            width: 90%;
+          }
         }
       }
       
       @media (min-width: $tablet-landscape-size) {
-        img {
-            width: 80%;
+        & {
+          img {
+            width: 80%;    
+          } 
         }
       }
     }
@@ -228,6 +287,8 @@ body {
     margin-top: 6rem;
     margin-bottom: 6rem;
 
+
+
     button {
       background-color: $color-primary;
       color: $color-white;
@@ -238,6 +299,13 @@ body {
 
       img {
         padding: 1rem
+      }
+
+      &.learn-more-btn {
+        background-position: right;
+        background-image: url(/images/arrow.svg);
+        background-repeat: no-repeat;
+        min-height: 44px;
       }
     }
 
@@ -255,7 +323,9 @@ body {
             margin-right: .5rem;
           }
         }
-      }    
+      }
+      
+      
     }
 
    #receive-payment-info {
@@ -347,13 +417,19 @@ body {
    
       .btn-border-none {
         padding-left: 0; 
-  
+        background-size: 15%;
+        padding-right: 2rem;
+        background-position: right;
+        background-repeat: no-repeat;
+       
         &.right  {
           color: $color-success;
+          background-image: url(/images/icons/arrow-r-green.svg);
         }
 
         &.left {
           color: $color-primary;
+          background-image: url(/images/icons/arrow-r-perpule.svg);
         }  
       }  
     }
@@ -363,6 +439,26 @@ body {
     background-color: $color-bg-light;
     border: none;
     border-radius: 8px;
+
+    .email {
+      padding-left: 3rem;
+      background-image: url('/images/icons/envelop.svg');
+      background-repeat: no-repeat;
+      background-position: 15px center;
+      background-size: 1.5rem;
+
+      
+      font-size: 16px;
+      color: #B4B7C9;
+    }
+
+    h4 {
+      @media (min-width: $desktop-size) {
+        & {
+          font-size: 24px; 
+        } 
+      }
+    } 
   }
 
   footer {
