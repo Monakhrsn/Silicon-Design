@@ -11966,7 +11966,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body.dark {
+.dark {
   color-scheme: dark;
   background-color: black;
   color: white;
@@ -12034,7 +12034,13 @@ body .main-header nav .form-switch .form-check-input {
   width: 2.9rem;
   height: 1.5rem;
   border: none;
+  box-shadow: 0 8px 16px 0 rgba(99, 102, 241, 0.19), 0 6px 20px 0 rgba(99, 102, 241, 0.19);
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  body .main-header nav .form-switch .form-check-input {
+    box-shadow: none;
+  }
 }
 body .main-header nav .form-switch .form-check-input:checked {
   background-color: #6366F1;
