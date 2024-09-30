@@ -1,0 +1,12 @@
+body .show-light {
+  display: block;
+}
+body .show-dark {
+  display: none;
+}
+body.dark .show-light {
+  display: none;
+}
+body.dark .show-dark {
+  display: block;
+}/*# sourceMappingURL=dark-mode.css.map */

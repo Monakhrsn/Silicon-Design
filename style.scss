@@ -3,15 +3,12 @@
 @import "variables.scss";
 @import "dark-mode.scss";
 
-
 body {
+  color-scheme: light;
   font-family: 'manrope', sans-serif;;
   line-height: 1.6;
-  color-scheme: light;
-
   background-color: var(--clr-bg-main);
   color: var(--clr-text-body);
-
 
   .text-lg {
     font-size: 1.125rem;
@@ -48,7 +45,7 @@ body {
   }
 
   .main-header {
-    background-image:linear-gradient(var(--clr-white), var(--clr-ingredient));
+    background-image:linear-gradient(var(--clr-bg-main-header-ingredient-lighter), var(--clr-bg-main-header-ingredient-darker));
   
     nav {
       min-height: 60px;
@@ -60,7 +57,7 @@ body {
         .logo-text {
           font-weight: bolder;
           font-size: 1.25rem;
-          color: var(--clr-gray-900);
+          color: var(--clr-logo-text);
         } 
       }
 
@@ -140,49 +137,49 @@ body {
       }
     }
 
-    .header-details {
+    .header-details { 
 
-      .appstore {
-        background-image: url('/images/appstore-light.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 33%;
+      a {
+        background-color: var(--clr-bg-btn-dark);
+        border: none;
+        border-radius: 8px;
         min-height: 55px;
+       
 
-        @media (min-width: $tablet-size) {
-          & {
-            min-height: 43px;
-            background-size: 70%;
-          }
-        }  
-        
-        @media (min-width: $desktop-size) {
-          & {
-            min-height: 52px;
-          }
-        }  
-      }
-
-      .googleplay {
-        background-image: url('/images/googleplay-light.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 33%;
-        min-height: 55px;
-        
-        @media (min-width: $tablet-size) {
-          & {
-            min-height: 43px;
-            background-size: 80%;
-          }
+        &.appstore {
+          @media (min-width: $tablet-size) {
+            & {
+              min-height: 43px;
+            }
+          }  
+          
+          @media (min-width: $desktop-size) {
+            & {
+              min-height: 52px;
+            }
+          }  
         }
-        
-        @media (min-width: $desktop-size) {
-          & {
-            min-height: 52px;
+  
+        &.googleplay {
+       
+          
+          
+          @media (min-width: $tablet-size) {
+            & {
+              min-height: 43px;
+             
+            }
           }
-        }  
-      }
+          
+          @media (min-width: $desktop-size) {
+            & {
+              min-height: 52px;
+            }
+          }  
+        }
+      } 
+     
+        
       .discover-btn-wrapper { 
         .accardion-btn {
           border: none;
@@ -397,12 +394,13 @@ body {
       button {
         font-size: 16px;
         font-weight:600;
-        color: var(--clr-accordion-item-header);
+        color: var(--clr-accordion-item-heading);
         background-color: var(--clr-bg-accordion);
       }
 
   
       .accordion-button {
+        color: var(--clr-accordion-item-heading);
         &:not(.collapsed) {
           background-color: var(--clr-bg-accordion);
           
@@ -419,7 +417,7 @@ body {
         }
       
         &:after{
-          background-color: var(--clr-bg-secondry);
+          background-color: var(--clr-bg-accordion-btn-chevron-down);
           padding: 1.25rem;
           border-radius: 50%;
           background-position: center;
@@ -489,7 +487,7 @@ body {
         background-size: 1.5rem;
         font-size: 16px;
         border-color: var(--clr-border-gray);
-        // background-color: var(--clr-bg-light);
+        background-color: var(--clr-bg-light);
 
         &::placeholder {
           color: var(--clr-text-lightest);
