@@ -1,49 +1,44 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "variables.scss";
 @import "dark-mode.scss";
 
-$color-dark: #0B0F19;
-$color-primary: #6366F1;
-$color-gray: #9397AD;
-$color-darker-gray: #585C7B;
-$color-gray-800: #33354D;
-$color-border-gray: #E2E5F1;
-$color-bg-light: #F3F6FF;
-$color-white: #fff;
-$color-bg-btn: #3e4265;
-$color-success: #22C55E;
-
-$tablet-size: 768px;
-$tablet-landscape-size: 992px;
-$desktop-size: 1200px;
 
 body {
-  font-family: 'manrope', sans-serif;
+  font-family: 'manrope', sans-serif;;
+  line-height: 1.6;
   color-scheme: light;
 
-  h4, h2, h3, h1 {
-    font-weight: bolder;
-    color: $color-dark;
+  background-color: var(--clr-bg-main);
+  color: var(--clr-text-body);
+
+
+  .text-lg {
+    font-size: 1.125rem;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    color: var(--clr-text-heading);
+    line-height: 1.3; 
   }
 
   p ,li {
-    color: $color-darker-gray;
     font-size: 16px;
   }
 
   .transition {
     transition: .4s;
-
   }
 
   .btn-primary {
-    background-color: $color-primary;
+    background-color: var(--clr-primary);
     border: none;
 
     &:hover {
       background-color: transparent;
-      border: 1px solid $color-primary;
-      color: $color-primary;
+      border: 1px solid var(--clr-primary);
+      color: var(--clr-primary);
     }
   }
 
@@ -53,8 +48,8 @@ body {
   }
 
   .main-header {
-    background-image: linear-gradient($color-white, #f8f3fe);
-
+    background-image:linear-gradient(var(--clr-white), var(--clr-ingredient));
+  
     nav {
       min-height: 60px;
 
@@ -65,17 +60,17 @@ body {
         .logo-text {
           font-weight: bolder;
           font-size: 1.25rem;
-          color: $color-dark;
+          color: var(--clr-gray-900);
         } 
       }
 
       .featurs-link {
         a {
           text-decoration: none;
-          color: $color-gray-800;
+          color: var(--clr-gray-800);
 
           &:hover {
-            color: $color-primary;
+            color: var(--clr-primary);
           }
         }
       }
@@ -103,7 +98,7 @@ body {
           }
 
           &:checked {
-            background-color: $color-primary;
+            background-color: var(--clr-primary);
           }
         }
       }
@@ -119,9 +114,9 @@ body {
       }
 
       .sign-btn {
-        background-color: $color-primary; 
+        background-color: var(--clr-primary); 
         border-color: transparent;
-        color: $color-white;
+        color: var(--clr-white);
         border-radius: 5px;
         font-size: 14px;
         background-image: url('/images/user-icon-white.svg');
@@ -137,9 +132,9 @@ body {
         }
 
         &:hover {
-          color: $color-primary;
+          color: var(--clr-primary);
           background-color: transparent;
-          border: 1px solid $color-primary;
+          border: 1px solid var(--clr-primary);
           background-image: url('/images/user-icon-perpule.svg');
         }
       }
@@ -199,12 +194,11 @@ body {
           background-repeat: no-repeat;
           transform: rotate(180deg);
           box-shadow: 0 5px 16px 5px rgba(226, 224, 226, 0.2), 0 0 20px 1px rgba(120, 120, 120, 0.19);
-          background-color: $color-white;
+          background-color: var(--clr-white);
           cursor: pointer;
         }
         
         .discover-more {
-          color: $color-darker-gray;
           font-size: 14px;  
         }
       }
@@ -242,9 +236,11 @@ body {
 
   #brands-section {
     .img-box {
+      background-color: var(--clr-bg-light);
+
       @media (min-width: $tablet-size) {   
         & {
-          border: 1px solid $color-border-gray;
+          border: 1px solid var(--clr-border-gray);
           border-radius: 8px;
           min-height: 100px;
           display: flex;
@@ -272,8 +268,8 @@ body {
       margin-top: 1rem;
 
       img {
-        border: solid 1px $color-bg-light;
-        background-color: $color-bg-light;
+        border: solid 1px var(--clr-bg-secondry);
+        background-color: var(--clr-bg-secondry);
         padding: 1rem;
         border-radius: 8px;
       }
@@ -281,12 +277,11 @@ body {
   }
    
   #how-work-section {
-    background-color: $color-bg-light;
+    background-color: var(--clr-bg-secondry);
     padding: 4rem 0;
 
     h2 {
-      padding-bottom: 3rem;
-      
+      padding-bottom: 3rem; 
     }
 
     img { 
@@ -321,9 +316,9 @@ body {
 
 
     button {
-      background-color: $color-primary;
-      color: $color-white;
-      border: 1px solid $color-primary;
+      background-color: var(--clr-primary);
+      color: var(--clr-white);
+      border: 1px solid var(--clr-primary);
       border-radius: 8px;
       padding: 0 2rem;
       font-size: 14px;
@@ -340,9 +335,9 @@ body {
         background-position: 7rem;
 
         &:hover {
-          color: $color-primary;
+          color: var(--clr-primary);
           background-color: transparent;
-          border: 1px solid $color-primary;
+          border: 1px solid var(--clr-primary);
           background-image: url('/images/icons/arrow-r-perpule.svg');
         }
       }
@@ -370,23 +365,23 @@ body {
    #receive-payment-info {
     margin-top: 5rem;
 
-    #bank-details-wrapper {  
-      img {
-        border: solid 1px $color-bg-light;
-        background-color: $color-bg-light;
-        padding: 1rem;
-        border-radius: 8px;
-      }
+      #bank-details-wrapper {  
+        img {
+          border: solid 1px var(--clr-bg-secondry);
+          background-color: var(--clr-bg-secondry);
+          padding: 1rem;
+          border-radius: 8px;
+        }
 
-      p {
-        padding-top: 1rem;
+        p {
+          padding-top: 1rem;
+        }
       }
     }
-   }
   }
 
   #clients-testimonials {
-    background-color: $color-bg-light;
+    background-color: var(--clr-bg-secondry);
 
     h2 {
       margin-right: 3rem;
@@ -396,19 +391,24 @@ body {
 
   #FAQ-section {
     .accordion-item {
+      background-color: var(--clr-bg-accordion);
+
+
       button {
         font-size: 16px;
         font-weight:600;
-        color: $color-dark;
+        color: var(--clr-accordion-item-header);
+        background-color: var(--clr-bg-accordion);
       }
+
   
       .accordion-button {
         &:not(.collapsed) {
-          background-color: $color-white;
+          background-color: var(--clr-bg-accordion);
           
           &:after {
             box-shadow: 0 8px 16px 0 rgba(99, 102, 241, 0.19), 0 6px 20px 0 rgba(99, 102, 241, 0.19);
-            background-color: $color-primary;
+            background-color: var(--clr-primary);
             background-image: url("/images/icons/chevron.svg");
             transform: rotate(0deg);
           }
@@ -419,7 +419,7 @@ body {
         }
       
         &:after{
-          background-color: $color-bg-light;
+          background-color: var(--clr-bg-secondry);
           padding: 1.25rem;
           border-radius: 50%;
           background-position: center;
@@ -433,7 +433,7 @@ body {
       }
   
       .accordion-body {
-        color: $color-darker-gray;
+        color: var(--clr-text-body);
         font-size: 14px;
       }
 
@@ -446,9 +446,10 @@ body {
     }
 
     .contact-us-wrapper {
-      border: 1px solid $color-border-gray;
+      border: 1px solid var(--clr-border-gray);
       border-radius: 8px;
       padding: 2rem 1.5rem;
+
 
       img {
         margin-bottom: 1rem;
@@ -462,12 +463,12 @@ body {
         background-repeat: no-repeat;
        
         &.right  {
-          color: $color-success;
+          color: var(--clr-contact-us);
           background-image: url(/images/icons/arrow-r-green.svg);
         }
 
         &.left {
-          color: $color-primary;
+          color: var(--clr-primary);
           background-image: url(/images/icons/arrow-r-perpule.svg);
         }  
       }  
@@ -475,7 +476,7 @@ body {
   } 
 
   .subscription {
-    background-color: $color-bg-light;
+    background-color: var(--clr-bg-secondry);
     border: none;
     border-radius: 8px;
 
@@ -487,15 +488,20 @@ body {
         background-position: 15px center;
         background-size: 1.5rem;
         font-size: 16px;
-        color: #B4B7C9;
+        border-color: var(--clr-border-gray);
+        // background-color: var(--clr-bg-light);
+
+        &::placeholder {
+          color: var(--clr-text-lightest);
+        } 
       }
 
       button:not(:disabled), [type=button]:not(:disabled) {
         border: none;
         &:hover {
-          color: $color-primary;
+          color: var(--clr-primary);
           background-color: white;
-          border: 1px solid $color-primary;
+          border: 1px solid var(--clr-primary);
         }
       }
     }
@@ -513,7 +519,7 @@ body {
 
   footer {
     smaller {
-      color: $color-gray;
+      color: var(--clr-gray-600);
     }
   }
 }
