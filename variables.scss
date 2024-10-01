@@ -12,7 +12,7 @@ $desktop-size: 1200px;
   --clr-gray-600: #9397AD; 
   --clr-gray-700: #585C7B; 
   --clr-gray-800: #33354D; 
-  --clr-gray-850: #1c2029; 
+  --clr-gray-850: #151922; 
   --clr-gray-900: #0B0F19; 
 
   --clr-primary: #6366F1;
@@ -20,7 +20,7 @@ $desktop-size: 1200px;
   --clr-contact-us: #22C55E;
   --clr-ingredient-light-mode: #efe5fa;
   --clr-ingredient-dark-mode: #161429;
- 
+  --clr-bg-testionial: #25212a;
 }
 
 body {
@@ -40,6 +40,11 @@ body {
   --clr-bg-btn-dark: var(--clr-gray-900);
   --clr-logo-text: var(--clr-gray-900);
   --clr-bg-accordion-btn-chevron-down: var(--clr-bg-secondry);
+  --clr-bg-card: var(--clr-bg-light);
+  --clr-text-card-name: var(--clr-gray-900);
+  --clr-link: var(--clr-gray-800);
+
+
 
   
   &.dark {
@@ -60,6 +65,13 @@ body {
     --clr-bg-btn-dark: var(--clr-gray-200);
     --clr-accordion-item-heading: var(--clr-white);
     --clr-bg-accordion-btn-chevron-down: var(--clr-gray-800);
+    --clr-bg-card: var(--clr-gray-800);
+    --clr-text-card-name: var(--clr-white);
+    --clr-bg-card: var(--clr-bg-testionial);
+    --clr-link: var(--clr-white);
+
+    
+
 
 
   }

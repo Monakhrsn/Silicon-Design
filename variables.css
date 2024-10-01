@@ -32,6 +32,8 @@ body {
   --clr-bg-btn-dark: var(--clr-gray-900);
   --clr-logo-text: var(--clr-gray-900);
   --clr-bg-accordion-btn-chevron-down: var(--clr-bg-secondry);
+  --clr-bg-card: var(--clr-bg-light);
+  --clr-text-card-name: var(--clr-gray-900);
 }
 body.dark {
   color-scheme: dark;
@@ -49,4 +51,6 @@ body.dark {
   --clr-bg-btn-dark: var(--clr-gray-200);
   --clr-accordion-item-heading: var(--clr-white);
   --clr-bg-accordion-btn-chevron-down: var(--clr-gray-800);
+  --clr-bg-card: var(--clr-bg-500);
+  --clr-text-card-name: var(--clr-white);
 }/*# sourceMappingURL=variables.css.map */
