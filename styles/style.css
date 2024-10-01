@@ -11921,7 +11921,7 @@ body {
 body .text-lg {
   font-size: 1.125rem;
 }
-body h1, body .h1, body h2, body .h2, body h3, body .h3, body h4, body .h4 {
+body h1, body .h1, body h2, body .h2, body h3, body .h3, body h4, body .h4, body h6, body .h6 {
   font-weight: 700;
   color: var(--clr-text-heading);
   line-height: 1.3;
@@ -12208,6 +12208,45 @@ body #clients-testimonials {
 body #clients-testimonials h2, body #clients-testimonials .h2 {
   margin-right: 3rem;
   font-size: 40px;
+}
+body #clients-testimonials .testimonial-card {
+  background-color: white;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  position: relative;
+}
+body #clients-testimonials .testimonial-card .quote-img {
+  position: absolute;
+  padding: 0.5rem 0.75rem;
+  left: 1.5rem;
+  top: -1.75rem;
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body #clients-testimonials .testimonial-card .rating .fa {
+  font-size: 15px;
+  color: var(--clr-gray-400);
+}
+body #clients-testimonials .testimonial-card .rating .fa.checked {
+  color: orange;
+}
+body #clients-testimonials .testimonial-card p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  color: var(--clr-gray-700);
+}
+body #clients-testimonials .testimonial-card span {
+  color: var(--clr-gray-900);
+  font-size: 16px;
+  font-weight: bold;
+}
+body #clients-testimonials .testimonial-card smaller {
+  color: var(--clr-gray-600);
+  font-size: 14px;
 }
 body #FAQ-section .accordion-item {
   background-color: var(--clr-bg-accordion);
