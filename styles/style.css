@@ -11934,6 +11934,9 @@ body h1, body .h1, body h2, body .h2, body h3, body .h3, body h4, body .h4, body
   color: var(--clr-text-heading);
   line-height: 1.3;
 }
+body h1h1, body h2h1, body h3h1, body h4h1, body h6h1 {
+  font-size: 56px;
+}
 body p, body li {
   font-size: 16px;
 }
@@ -11999,11 +12002,6 @@ body .main-header nav .form-switch .form-check-input:checked {
   background-color: var(--clr-primary);
 }
 body .main-header nav .navbar-toggle {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(62, 66, 101, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  background-position: center;
-  background-size: contain;
-  width: 30px;
-  height: 30px;
   display: block;
   cursor: pointer;
 }
@@ -12036,6 +12034,10 @@ body .main-header .header-details a {
   border-radius: 8px;
   min-height: 55px;
 }
+body .main-header .header-details a.appstore {
+  min-height: 51px;
+  padding: 0.5rem 1rem;
+}
 @media (min-width: 768px) {
   body .main-header .header-details a.appstore {
     min-height: 43px;
@@ -12045,6 +12047,10 @@ body .main-header .header-details a {
   body .main-header .header-details a.appstore {
     min-height: 52px;
   }
+}
+body .main-header .header-details a.googleplay {
+  min-height: 51px;
+  padding: 0.5rem 1rem;
 }
 @media (min-width: 768px) {
   body .main-header .header-details a.googleplay {
@@ -12071,6 +12077,11 @@ body .main-header .header-details .discover-btn-wrapper .accardion-btn {
 }
 body .main-header .header-details .discover-btn-wrapper .discover-more {
   font-size: 14px;
+}
+@media (min-width: 1200px) {
+  body .main-header .header-details .discover-btn-wrapper {
+    padding-top: 10rem;
+  }
 }
 @media (min-width: 768px) {
   body .main-header .header-details {
@@ -12265,6 +12276,7 @@ body #FAQ-section {
 }
 body #FAQ-section .accordion-item {
   background-color: var(--clr-bg-accordion);
+  border-color: var(--clr-border-gray);
 }
 body #FAQ-section .accordion-item button {
   font-size: 16px;
@@ -12342,6 +12354,12 @@ body .subscription {
   border: none;
   border-radius: 8px;
 }
+@media (min-width: 768px) {
+  body .subscription {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 body .subscription .input-wrapper .email {
   padding-left: 3rem;
   background-image: url("/images/icons/envelop.svg");
@@ -12351,6 +12369,7 @@ body .subscription .input-wrapper .email {
   font-size: 16px;
   border-color: var(--clr-border-gray);
   background-color: var(--clr-white);
+  height: 52px;
 }
 @media (min-width: 1200px) {
   body .subscription .input-wrapper .email {

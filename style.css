@@ -11975,13 +11975,14 @@ textarea.form-control-lg {
   --clr-gray-600: #9397AD;
   --clr-gray-700: #585C7B;
   --clr-gray-800: #33354D;
-  --clr-gray-850: #1c2029;
+  --clr-gray-850: #151922;
   --clr-gray-900: #0B0F19;
   --clr-primary: #6366F1;
   --clr-white: #fff;
   --clr-contact-us: #22C55E;
   --clr-ingredient-light-mode: #efe5fa;
   --clr-ingredient-dark-mode: #161429;
+  --clr-bg-testionial: #25212a;
 }
 
 body {
@@ -12002,6 +12003,7 @@ body {
   --clr-bg-accordion-btn-chevron-down: var(--clr-bg-secondry);
   --clr-bg-card: var(--clr-bg-light);
   --clr-text-card-name: var(--clr-gray-900);
+  --clr-link: var(--clr-gray-800);
 }
 body.dark {
   color-scheme: dark;
@@ -12019,8 +12021,10 @@ body.dark {
   --clr-bg-btn-dark: var(--clr-gray-200);
   --clr-accordion-item-heading: var(--clr-white);
   --clr-bg-accordion-btn-chevron-down: var(--clr-gray-800);
-  --clr-bg-card: var(--clr-bg-500);
+  --clr-bg-card: var(--clr-gray-800);
   --clr-text-card-name: var(--clr-white);
+  --clr-bg-card: var(--clr-bg-testionial);
+  --clr-link: var(--clr-white);
 }
 
 body .show-light {
@@ -12087,7 +12091,7 @@ body .main-header nav a .logo-text {
 }
 body .main-header nav .featurs-link a {
   text-decoration: none;
-  color: var(--clr-gray-800);
+  color: var(--clr-link);
 }
 body .main-header nav .featurs-link a:hover {
   color: var(--clr-primary);
@@ -12153,6 +12157,9 @@ body .main-header .header-details a {
   border-radius: 8px;
   min-height: 55px;
 }
+body .main-header .header-details a.appstore {
+  min-height: 51px;
+}
 @media (min-width: 768px) {
   body .main-header .header-details a.appstore {
     min-height: 43px;
@@ -12162,6 +12169,9 @@ body .main-header .header-details a {
   body .main-header .header-details a.appstore {
     min-height: 52px;
   }
+}
+body .main-header .header-details a.googleplay {
+  min-height: 51px;
 }
 @media (min-width: 768px) {
   body .main-header .header-details a.googleplay {
@@ -12459,6 +12469,12 @@ body .subscription {
   border: none;
   border-radius: 8px;
 }
+@media (min-width: 768px) {
+  body .subscription {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 body .subscription .input-wrapper .email {
   padding-left: 3rem;
   background-image: url("/images/icons/envelop.svg");
@@ -12467,7 +12483,13 @@ body .subscription .input-wrapper .email {
   background-size: 1.5rem;
   font-size: 16px;
   border-color: var(--clr-border-gray);
-  background-color: var(--clr-bg-light);
+  background-color: var(--clr-white);
+  height: 52px;
+}
+@media (min-width: 1200px) {
+  body .subscription .input-wrapper .email {
+    background-color: var(--clr-bg-light);
+  }
 }
 body .subscription .input-wrapper .email::-moz-placeholder {
   color: var(--clr-text-lightest);
