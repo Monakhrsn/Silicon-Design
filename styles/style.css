@@ -11862,6 +11862,7 @@ textarea.form-control-lg {
   --clr-ingredient-light-mode: #efe5fa;
   --clr-ingredient-dark-mode: #161429;
   --clr-bg-testionial: #25212a;
+  --clr-bg-btn-chevron-dark: #1e222b;
 }
 
 body {
@@ -11899,7 +11900,7 @@ body.dark {
   --clr-bg-main-header-ingredient-lighter: var(--clr-gray-900);
   --clr-bg-btn-dark: var(--clr-gray-200);
   --clr-accordion-item-heading: var(--clr-white);
-  --clr-bg-accordion-btn-chevron-down: var(--clr-gray-800);
+  --clr-bg-accordion-btn-chevron-down: var(--clr-bg-btn-chevron-dark);
   --clr-bg-card: var(--clr-gray-800);
   --clr-text-card-name: var(--clr-white);
   --clr-bg-card: var(--clr-bg-testionial);
@@ -11966,8 +11967,11 @@ body .main-header nav a {
   text-decoration: none;
   cursor: pointer;
 }
+body .main-header nav a .logo {
+  margin-right: 0.25rem;
+}
 body .main-header nav a .logo-text {
-  font-weight: bolder;
+  font-weight: 700;
   font-size: 1.25rem;
   color: var(--clr-logo-text);
 }

@@ -58,8 +58,12 @@ body {
         text-decoration: none;
         cursor: pointer;
 
+        .logo {
+          margin-right: .25rem;  
+        } 
+
         .logo-text {
-          font-weight: bolder;
+          font-weight: 700;
           font-size: 1.25rem;
           color: var(--clr-logo-text);
         } 
@@ -475,6 +479,7 @@ body {
             background-color: var(--clr-primary);
             background-image: url("/images/icons/chevron.svg");
             transform: rotate(0deg);
+            
             
           }
 
