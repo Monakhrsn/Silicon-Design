@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Silicon-Design</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -19,7 +18,7 @@
             <a href="#">Features</a>
           </div>
           <div class="col-6 col-xl-8">
-            <div class="row justify-content-end">
+            <div class="row justify-content-end align-items-center">
               <label for="flexSwitchCheckDefault" class="dark-mode-text d-none col-4 d-md-block text-md-end col-xl-2" aria-label="darkmode switch">Dark Mode</label>
               <div class="col-3 col-xl-2 form-check form-switch">
                 <input
@@ -30,11 +29,9 @@
               </div>
               <div class="col-2 d-xl-none ">
                 <div class="row d-flex justify-content-center justify-align-center">
-                  <a href="#" class="col navbar-toggle ">
-                    <!-- <span class="navbar-toggle"></span> -->
-                     <img class="show-light img-fluid " src="/images/icons/Button - Toggle navigation-gray.svg" alt="">
-                     <img class="show-dark img-fluid " src="/images/icons/Button - Toggle navigation-white.svg" alt="">
-                  </a>
+                  <button class="navbar-toggle ">
+                    <span class="navbar-toggle"></span>
+                  </button>
                 </div>
               </div> 
               <button type="button" class="sign-btn transition d-none col-3 col-xl-2 d-xl-block">
@@ -351,26 +348,14 @@
               <div class="card testimonial-card shadow-sm">
                 <div class="quote-img">
                   <img class="img-fluid" src="/images/icons/quote-white.svg" alt="">
+                </div> 
+                <div class="rating">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star unfilled"></span>
                 </div>
-               <div class="rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-               </div>
-                <!-- <fieldset class="rating">
-                  <input type="radio" id="star5" name="rating" value="5" />
-                  <label for="star5">5 stars</label>
-                  <input type="radio" id="star4" name="rating" value="4" />
-                  <label for="star4">4 stars</label>
-                  <input type="radio" id="star3" name="rating" value="3" />
-                  <label for="star3">3 stars</label>
-                  <input type="radio" id="star2" name="rating" value="2" />
-                  <label for="star2">2 stars</label>
-                  <input type="radio" id="star1" name="rating" value="1" />
-                  <label for="star1">1 star</label>
-              </fieldset> -->
                 <p>Sit pretium aliquam tempor, orci dolor 
                   sed maecenas rutrum sagittis. Laoreet 
                   posuere rhoncus, egestas lacus, egestas 
@@ -393,13 +378,13 @@
                 <div class="quote-img">
                   <img class="img-fluid" src="/images/icons/quote-white.svg" alt="">
                 </div>
-               <div class="rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-               </div>
+                <div class="rating">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                </div>
                 <p>Sit pretium aliquam tempor, orci dolor 
                   sed maecenas rutrum sagittis. Laoreet 
                   posuere rhoncus, egestas lacus, egestas 
@@ -740,6 +725,6 @@
         <smaller>Credit MadrasThemes</smaller>
       </div>   
     </footer>
-    <script src="darkmode.js"></script>
+    <script src="scripts/darkmode.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-@import "./node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import "variables.scss";
 @import "dark-mode.scss";
@@ -52,7 +52,7 @@ body {
     background-image:linear-gradient(var(--clr-bg-main-header-ingredient-lighter), var(--clr-bg-main-header-ingredient-darker));
   
     nav {
-      min-height: 60px;
+      min-height: 70px;
 
       a {
         text-decoration: none;
@@ -109,11 +109,13 @@ body {
       }
 
       .navbar-toggle {
-        // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(62, 66, 101, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        // background-position: center;
-        // background-size: contain;
-        // width: auto;
-        // height: 50px;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(62, 66, 101, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        background-position: center;
+        background-size: contain;
+        width: auto;
+        height: 30px;
+        background-color: transparent;
+        border: none;
         display: block;
         cursor: pointer;
       }
@@ -151,12 +153,10 @@ body {
         border: none;
         border-radius: 8px;
         min-height: 55px;
-       
 
         &.appstore {
           min-height: 51px;
           padding: 0.5rem 1rem;
-
 
           @media (min-width: $tablet-size) {
             & {
@@ -175,11 +175,9 @@ body {
           min-height: 51px;
           padding: 0.5rem 1rem;
 
-          
           @media (min-width: $tablet-size) {
             & {
-              min-height: 43px;
-             
+              min-height: 43px;  
             }
           }
           
@@ -190,7 +188,6 @@ body {
           }  
         }
       } 
-     
         
       .discover-btn-wrapper { 
         .accardion-btn {
@@ -326,8 +323,6 @@ body {
     margin-top: 6rem;
     margin-bottom: 6rem;
 
-
-
     button {
       background-color: var(--clr-primary);
       color: var(--clr-white);
@@ -421,14 +416,21 @@ body {
       }
 
       .rating {
-        .fa {
-          font-size: 15px;
-          color: var(--clr-gray-400);
+        .star {
+          height: 16px;
+          width: 16px;
+          display: inline-block;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
 
-          &.checked {
-            color: orange;
+          &.filled {
+            background-image: url(/images/icons/star-filled.svg);
           }
-        } 
+          &.unfilled {
+            background-image: url(/images/icons/star-unfilled.svg);
+          }
+        }
       }
 
       p {
@@ -472,15 +474,14 @@ body {
 
         &:not(.collapsed) {
           background-color: var(--clr-bg-accordion);
-          
+          box-shadow: none;
+          border-bottom: 1px solid var(--clr-border-gray);
           
           &:after {
             box-shadow: 0 8px 16px 0 rgba(99, 102, 241, 0.19), 0 6px 20px 0 rgba(99, 102, 241, 0.19);
             background-color: var(--clr-primary);
             background-image: url("/images/icons/chevron.svg");
-            transform: rotate(0deg);
-            
-            
+            transform: rotate(0deg);    
           }
 
           @media (min-width: $tablet-size) {         
@@ -569,6 +570,7 @@ body {
         
         @media (min-width:$desktop-size) {
           background-color: var(--clr-bg-light);
+          color: var(--clr-text-body);
         }
 
         &::placeholder {
@@ -585,8 +587,6 @@ body {
         }
       }
     }
-
-    
 
     h4 {
       @media (min-width: $desktop-size) {
